@@ -45,7 +45,6 @@ public class FeedbackController {
             return ResponseEntity.notFound().build();
         }
         Feedback feedbackExiste = optionalFeedback.get();
-        feedbackExiste.setId(feedbackDTO.id());
         feedbackExiste.setPacienteId(feedbackDTO.pacienteId());
         feedbackExiste.setData(feedbackDTO.data());
         feedbackExiste.setNota(feedbackDTO.nota());
