@@ -44,7 +44,6 @@ public class SintomaController {
             return ResponseEntity.notFound().build();
         }
         Sintoma sintomaExiste = optionalSintoma.get();
-        sintomaExiste.setId(sintomaDTO.id());
         sintomaExiste.setPacienteId(sintomaDTO.pacienteId());
         sintomaExiste.setData(sintomaDTO.data());
         sintomaExiste.setDescricao(sintomaDTO.descricao());
