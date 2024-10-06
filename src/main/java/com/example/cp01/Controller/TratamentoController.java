@@ -44,7 +44,6 @@ public class TratamentoController {
             return ResponseEntity.notFound().build();
         }
         Tratamento tratamentoExiste = optionalTratamento.get();
-        tratamentoExiste.setId(tratamentoDTO.id());
         tratamentoExiste.setPacienteId(tratamentoDTO.pacienteId());
         tratamentoExiste.setData(tratamentoDTO.data());
         tratamentoExiste.setDescricao(tratamentoDTO.descricao());
