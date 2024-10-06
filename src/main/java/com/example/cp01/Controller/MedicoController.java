@@ -45,7 +45,6 @@ public class MedicoController {
             return ResponseEntity.notFound().build();
         }
         Medico medicoExiste = optionalMedico.get();
-        medicoExiste.setId(medicoDTO.id());
         medicoExiste.setPacienteId(medicoDTO.pacienteId());
         medicoExiste.setNome(medicoDTO.nome());
         medicoExiste.setEmail(medicoDTO.email());
